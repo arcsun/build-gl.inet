@@ -4,8 +4,8 @@ feeds:
   - name: helloworld
     uri: https://github.com/fw876/helloworld.git
     branch: master
-  - name: owpackages
-    uri: https://github.com/kenzok8/openwrt-packages.git
+  - name: owsmpackages
+    uri: https://github.com/kenzok8/small-package.git
     branch: master
 packages:
   - luci-app-ssr-plus
@@ -33,6 +33,7 @@ packages:
   - luci-lib-ipkg
   - luci-app-adguardhome
   - adguardhome
+  - luci-app-passwall2
 
 
 diffconfig: |
