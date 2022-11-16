@@ -1,9 +1,12 @@
 feeds:
   - name: custom
     path: ../feeds_dir/custom
-  - name: opackages
-    uri: https://github.com/kiddin9/openwrt-packages.git
+  - name: helloworld
+    uri: https://github.com/fw876/helloworld.git
     branch: master
+  - name: spackages
+    uri: https://github.com/kenzok8/small-package.git
+    branch: main
 packages:
   - luci-app-ssr-plus
   - luci-app-ddns
@@ -28,13 +31,3 @@ packages:
   - luci-i18n-ttyd-zh-cn
   - luci-compat
   - luci-lib-ipkg
-
-
-diffconfig: |
-  CONFIG_PACKAGE_wpad-basic=n
-  CONFIG_PACKAGE_wpad=n
-  CONFIG_PACKAGE_dnsmasq=n
-  CONFIG_PACKAGE_luci-i18n-ddns-zh-cn=y
-  CONFIG_LUCI_LANG_zh_Hans=y
-  CONFIG_BUSYBOX_CUSTOM=y
-  CONFIG_BUSYBOX_CONFIG_FEATURE_FLOAT_SLEEP=y
