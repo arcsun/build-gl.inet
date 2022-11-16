@@ -33,7 +33,7 @@ packages:
   - luci-lib-ipkg
   - luci-app-adguardhome
   - adguardhome
-  - luci-app-passwall2
+  - luci-app-passwall
 
 
 diffconfig: |
