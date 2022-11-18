@@ -32,6 +32,9 @@ packages:
   - luci-app-uugamebooster
   - luci-app-passwall
   - luci-app-ssr-plus
+  - luci-app-aliyundrive-webdav
+  - vsftpd
+  - openssh-sftp-server
 
 diffconfig: |
   CONFIG_PACKAGE_wpad-basic=n
